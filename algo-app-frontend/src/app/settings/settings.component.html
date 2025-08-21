@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>Settings</mat-card-title>
+    <mat-card-content>
+        <form>
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>App Name</mat-label>
+                <input matInput [(ngModel)]="settings.appName" name="appName">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Theme</mat-label>
+                <input matInput [(ngModel)]="settings.theme" name="theme">
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" (click)="saveSettings()">Save</button>
+        </form>
+    </mat-card-content>
+</mat-card>
